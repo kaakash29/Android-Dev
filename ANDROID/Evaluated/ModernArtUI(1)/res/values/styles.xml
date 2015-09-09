@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="rect" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+    
+    <style name="rect_center" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+    
+	<style name="rect_left" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="rect_right" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="rect_layered_upper" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+    
+    <style name="rect_layered_lower" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+    
+</resources>

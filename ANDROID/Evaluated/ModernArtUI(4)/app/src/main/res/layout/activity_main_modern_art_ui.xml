@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainModernArtUI"
+    android:background="@android:color/background_dark">
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/seekBar"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:baselineAligned="false"
+        android:background="@android:color/background_dark">
+
+            <LinearLayout
+                android:id="@+id/left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:dividerPadding="0dp"
+                android:background="@android:color/background_dark"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/leftTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/leftTop"
+                    android:padding="@dimen/activity_inner_margin"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/leftBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/leftBottom"
+                    android:padding="@dimen/activity_inner_margin"
+                    android:layout_marginTop="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@android:color/background_dark"
+                android:layout_marginLeft="5dp">
+
+                <TextView
+                    android:id="@+id/rightTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/rightTop"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/rightMiddle"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/rightMiddle"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <TextView
+                    android:id="@+id/rightBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/rightBottom"
+                    android:layout_marginTop="5dp" />
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar android:id="@+id/seekBar" android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="@integer/abc_max_action_buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"></SeekBar>
+
+</RelativeLayout>

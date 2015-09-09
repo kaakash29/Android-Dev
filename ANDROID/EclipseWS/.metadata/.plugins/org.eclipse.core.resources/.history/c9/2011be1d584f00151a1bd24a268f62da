@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AudioVideoCamera</string>
+    <string name="button1_label">Take Today\'s Selfie</string>
+    <string name="button2_label">C Myself Evolve</string>
+</resources>

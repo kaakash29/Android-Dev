@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ModernArtUI</string>
+    <string name="more_information">More information</string>
+    <string name="dialog_message">Created by Sergey Safonov.\nClick below to learn about MOMA!</string>
+    <string name="dialog_yes">Visit MOMA</string>
+    <string name="dialog_no">Not Now</string>
+</resources>

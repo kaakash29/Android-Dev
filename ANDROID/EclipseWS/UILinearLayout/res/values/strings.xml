@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ModernArt UI</string>
+    <string name="more_info">More information</string>
+    <string name="about">About</string>
+    <string name="dialog_text">Inspired by the works of artists from the Museum of Modern Art in New York.\n\nClick below to learn more!</string>
+    <string name="dialog_not_now">Not now</string>
+    <string name="dialog_visit">Visit MOMA</string>
+</resources>

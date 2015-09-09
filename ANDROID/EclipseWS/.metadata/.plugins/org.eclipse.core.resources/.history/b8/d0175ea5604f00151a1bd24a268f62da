@@ -1,0 +1,96 @@
+/**
+ * 
+ */
+package course.examples.audiovideo.camera;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import course.examples.ui.gridlayout.ImageAdapter;
+import course.examples.ui.gridlayout.R;
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.GridView;
+import android.widget.ImageView;
+
+/**
+ * @author Kumar
+ *
+ */
+public class imageGridActivity extends Activity {
+
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	
+	    setContentView(R.layout.imagegrid);
+	    
+	    GridView gridview = (GridView) findViewById(R.id.gridview);
+	    
+	    gridview.setAdapter(new ImageAdapter(this, null));
+	    
+	    
+	    
+	    
+	}
+}
+
+public class ImageAdapter extends BaseAdapter {
+	private static final int PADDING = 8;
+	private static final int WIDTH = 250;
+	private static final int HEIGHT = 250;
+	private Context mContext;
+	private List<Integer> mThumbIds;
+
+	// Store the list of image IDs
+	public ImageAdapter(Context c, List<Integer> ids) {
+		mContext = c;
+		this.mThumbIds = ids;
+	}
+
+	// Return the number of items in the Adapter
+	@Override
+	public int getCount() {
+		return mThumbIds.size();
+	}
+
+	// Return the data item at position
+	@Override
+	public Object getItem(int position) {
+		return mThumbIds.get(position);
+	}
+
+	// Will get called to provide the ID that
+	// is passed to OnItemClickListener.onItemClick()
+	@Override
+	public long getItemId(int position) {
+		return mThumbIds.get(position);
+	}
+
+	// Return an ImageView for each item referenced by the Adapter
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+
+		ImageView imageView = (ImageView) convertView;
+
+		// if convertView's not recycled, initialize some attributes
+		if (imageView == null) {
+			imageView = new ImageView(mContext);
+			imageView.setLayoutParams(new GridView.LayoutParams(WIDTH, HEIGHT));
+			imageView.setPadding(PADDING, PADDING, PADDING, PADDING);
+			imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+		}
+
+		imageView.setImageResource(mThumbIds.get(position));
+		return imageView;
+	}
+}
+
+
+

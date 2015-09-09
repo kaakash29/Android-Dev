@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package course.examples.audiovideo.camera;
+
+import android.app.Activity;
+
+/**
+ * @author Kumar
+ *
+ */
+public class imageGridActivity extends Activity {
+
+}

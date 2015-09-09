@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false" >
+	
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <RelativeLayout
+        android:id="@+id/palette"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" >
+
+        <View
+            android:id="@+id/bluebox"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#0000aa"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/seabox"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_toRightOf="@+id/bluebox"
+            android:layout_toEndOf="@+id/bluebox"
+            android:background="#67FCD2"
+            android:gravity="center_horizontal" />
+      
+        
+        
+        <View
+            android:id="@+id/yellowbox"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/bluebox"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#aaaa00"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/magentabox"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/yellowbox"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:background="#b77fd7"
+            android:gravity="center_horizontal" />
+
+        <View
+            android:id="@+id/whitebox"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/yellowbox"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_toRightOf="@+id/yellowbox"
+            android:layout_toEndOf="@+id/yellowbox"
+            android:background="#E9EFC9"
+            android:gravity="center_horizontal" />
+        
+        <View
+            android:id="@+id/purplebox"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/magentabox"
+            android:layout_margin="5sp"
+            android:layout_marginTop="5sp"
+            android:layout_toRightOf="@+id/magentabox"
+            android:layout_toEndOf="@+id/magentabox"
+            android:background="#4F1636"
+            android:gravity="center_horizontal" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

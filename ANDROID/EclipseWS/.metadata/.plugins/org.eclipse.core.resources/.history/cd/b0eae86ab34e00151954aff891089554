@@ -1,0 +1,34 @@
+package course.examples.audiovideo.camera;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageView;
+
+public class welcome extends Activity {
+
+	/** Called when the activity is first created. */
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    Log.i("AAKUDEBUG","Welcome Activity has been called");
+	    System.out.println("Welcome activity called");
+	    // TODO Auto-generated method stub
+	    super.onCreate(savedInstanceState);
+		setContentView(R.layout.welcome);
+		ImageView image = (ImageView) findViewById(R.id.imageView1);
+		image.setImageResource(R.drawable.welcome);
+		
+		//try {
+			//Thread.sleep(1000);
+		//} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+		//}
+		
+		Intent cameraIntent = new Intent(this, AudioVideoCameraActivity.class);
+		this.startActivity(cameraIntent);
+	}
+
+}
